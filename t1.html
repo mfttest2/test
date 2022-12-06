@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: #ccc;
+            color: #0008;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 3px;
+            text-transform: capitalize;
+        }
+        .btn--danger{
+            background-color: tomato;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <input type="radio" name="radio" id="">
+            <input type="radio" name="radio" id="">
+            <input type="radio" name="radio" id="">
+            <input type="number" name="" id="" min="100" max="200">
+        </fieldset>
+    </form>
+    <hr>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("<button></button",{
+            text:"btn",
+            class:"btn btn--danger"
+        }).appendTo("body");
+
+        let human = {
+            name:"ali",
+            lname:"rezayi",
+            age : 18,
+            job : "programmer",
+            coding : function(){
+                console.log("write code ...");
+            }
+
+        }
+        
+        // console.log(Object.entries(human));
+        for(item in human){
+            console.log(human[item]);
+        }
+        
+    </script>
+</body>
+</html>
