@@ -32,27 +32,49 @@
     <hr>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
-        $("<button></button",{
-            text:"btn",
-            class:"btn btn--danger"
-        }).appendTo("body");
+        // $("<button></button",{
+        //     text:"btn",
+        //     class:"btn btn--danger"
+        // }).appendTo("body");
 
-        let human = {
-            name:"ali",
-            lname:"rezayi",
-            age : 18,
-            job : "programmer",
-            coding : function(){
-                console.log("write code ...");
+        // let human = {
+        //     name:"ali",
+        //     lname:"rezayi",
+        //     age : 18,
+        //     job : "programmer",
+        //     coding : function(){
+        //         console.log("write code ...");
+        //     }
+
+        // }
+        
+            // function createHuman(name,lname,age){
+            //     return {
+            //             name,
+            //             lname,
+            //             age,
+            //             job : "programmer"
+            //         }
+                    
+            // }
+            function CreateHuman(name,lname,age){
+              
+                       this.name = name;
+                       this.lname = lname;
+                       this.age= age;
+                        job : "programmer"
+                   
+                    
             }
 
-        }
-        
+// let user2 = createHuman("reza","momhammadi",18);
+let user2 =new CreateHuman("reza","momhammadi",18);
+console.log(user2);
         // console.log(Object.entries(human));
-        for(item in human){
-            console.log(human[item]);
-        }
-        
+        // for(item in human){
+        //     console.log(human[item]);
+        // }
+
     </script>
 </body>
 </html>
