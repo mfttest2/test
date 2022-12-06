@@ -39,12 +39,14 @@
                 g = Math.floor(Math.random()*256),
                 b = Math.floor(Math.random()*256),
                 w = Math.floor(Math.random()*101),
-                m = Math.floor(Math.random()*30),
-                p = Math.floor(Math.random()*10);
+                m = Math.floor(Math.random()*31),
+                p = Math.floor(Math.random()*11),
+                s = Math.floor(Math.random()*41);
             list.style.backgroundColor = `rgb(${r},${g},${b})`;
             list.style.width = w + "%";
             list.style.margin = m + "px";
             list.style.padding = p + "px";
+            list.style.transform = `rotate(${s}deg)`;
          }
         }
         setInterval(colorize,300)
